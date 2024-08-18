@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import PokemonList from "../components/PokemonList";
 
-function Pokemon() {
+const Pokemon = () => {
 const [pokemon, setPokemon] = useState([]);
+
 useEffect(() => {
     fetch("https://pokeapi.co/api/v2/pokemon-species?limit=10")
     .then(Response => Response.json())

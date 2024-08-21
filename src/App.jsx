@@ -4,7 +4,7 @@ import Navbar from "./components/NavBar";
 import Home from "./pages/Homes";
 import Pokemon from './pages/Pokemon';
 import About from "./pages/About";
-import "./app.css";
+import "./App.css";
 
 const App = () => (
   <Router>

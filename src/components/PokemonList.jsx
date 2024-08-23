@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 const PokemonList = ({ pokemon }) => (
 
     <ul>
-        {pokemon.map((poke, index) => (
-            <li key={poke.name}>
+        {pokemon.map((poke) => (
+            <li key={poke.id}>
                 <Link to={"/pokemon/${poke.name}"}>{poke.name}</Link>
-                <img src={"https://pokeapi.co/api/v2/pokemon-species/aegislash/${index +1}.png"} alt={poke.name}/>
-                <h3>{poke.name}</h3>
+                <img src={"https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/1.svg"} alt={poke.name}/>
+               
                             </li>
         ))}
     </ul> 

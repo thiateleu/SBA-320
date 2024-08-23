@@ -4,6 +4,7 @@ import Navbar from "./components/NavBar";
 import Home from "./pages/Homes";
 import Pokemon from './pages/Pokemon';
 import About from "./pages/About";
+import PokemonDetail from './components/PokemonDetail';
 import "./App.css";
 
 const App = () => (
@@ -12,6 +13,7 @@ const App = () => (
     <Routes>
     <Route path="/" element={<Home />}/>
     <Route path="/pokemon" element={<Pokemon />}/>
+    <Route path="/pokemon/:name" element={<PokemonDetail />}/>
     <Route path="/about" element={<About />}/>
       
     </Routes>

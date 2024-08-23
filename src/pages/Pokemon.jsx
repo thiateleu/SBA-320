@@ -7,7 +7,13 @@ const [pokemon, setPokemon] = useState([]);
 useEffect(() => {
     fetch("https://pokeapi.co/api/v2/pokemon?limit=10")
     .then(Response => Response.json())
-    .then(data => setPokemon(data.results));
+    .then(data => { 
+        const fetches = data.results.map(poke =>
+            fetch(poke.url).then(Response => Response.json())
+        
+        );
+        Promise.all(fetches).then(detailedPokemon => setPokemon(detailedPokemon));
+});
 }, []);
 
     return (

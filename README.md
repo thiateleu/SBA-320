@@ -14,4 +14,4 @@ Features:
 Tech stach:
 .Frontend:React. Javascript. HTML, CSS
 .API: PokeAPI
-Deployement:failed to netlify
+Deployement:(https://tranquil-fox-613458.netlify.app/)
